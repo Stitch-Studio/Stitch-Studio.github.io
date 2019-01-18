@@ -1,4 +1,8 @@
 
-.twitter-timeline-container {
-  width: 100%;
+.profile-text {
+  text-align:left;
+}
+
+.profile-name, .profile-image {
+  margin: 0 0 1em 0 !important;
 }
