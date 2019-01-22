@@ -2862,6 +2862,20 @@ input, select, textarea {
 			text-align: center;
 		}
 
+			.statistics.blog {
+				justify-content: space-evenly;
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.statistics.blog :hover {
+				opacity: 0.9;
+			}
+
+			.statistics.blog a {
+				margin: 0.5em 0;
+			}
+
 			.statistics li.style1 {
 				background-color: #efa8b0;
 			}
@@ -2880,6 +2894,10 @@ input, select, textarea {
 
 			.statistics li.style5 {
 				background-color: #8cc9f0;
+			}
+
+			.statistics li.style6 {
+				background-color: #93b5c6;
 			}
 
 			.statistics li strong, .statistics li b {
