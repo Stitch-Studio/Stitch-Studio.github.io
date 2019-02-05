@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Stitch Studio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!--Favicon-->
+		<link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="../images/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/custom.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Vol. 3: Jump Stitches</h1>
+						<p>02/04/2019</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<h2>Highlights of the Week</h2>
+								<p>Hello again! Stitch Studio has been making great leaps and bounds recently! Here are the highlights from this past week.</p>
+								<p>On the electrical side, Yaning finished the custom PCB design and sent it out to be manufactured. Take a look at that beautiful power and motor control circuit board!</p>
+								<p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">coming soon: the power and motor control circuit board <a href="https://t.co/ETBm5Jn41B">pic.twitter.com/ETBm5Jn41B</a></p>&mdash; Stitch Studio (@stitchstudio1) <a href="https://twitter.com/stitchstudio1/status/1090062248008081408?ref_src=twsrc%5Etfw">January 29, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+								<p>Much progress was made on the software side. For starters, Rachel, Frank, and I finished the first iteration of the g-code communication. Several bugs emerged when testing the entire pipeline (g-code -> g-code transmitter -> stepper motor controller -> motor movement), and the three of us got together to discover and triage them. We found that the Bresenham’s line algorithm that we implemented had an erroneous conditional statement and that our sign function wasn’t working as expected. We also added logic on the Arduino side to “ack” (acknowledge) the g-code commands to ensure that it doesn’t miss any. Lastly, we implemented a delayed interrupt library for needle speed control purposes in the future.</p>
+								<p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">assembly is almost complete! <a href="https://t.co/TehLzmQ9cB">pic.twitter.com/TehLzmQ9cB</a></p>&mdash; Stitch Studio (@stitchstudio1) <a href="https://twitter.com/stitchstudio1/status/1091212866206654464?ref_src=twsrc%5Etfw">February 1, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+								<p>On the mechanical side, Yaning acquired the rest of our screws and assembled most of the frame. Now for the exciting part! The Stitch Studio team put the pieces together, attached a marker to the end of the top stage, and fired up the machine. I’ll let the video speak for itself...</p>
+								<p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fully assembled frame and working g-code output! <a href="https://t.co/rkyLLzsR09">pic.twitter.com/rkyLLzsR09</a></p>&mdash; Stitch Studio (@stitchstudio1) <a href="https://twitter.com/stitchstudio1/status/1091508629709086720?ref_src=twsrc%5Etfw">February 2, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+								<h2>What’s Next?</h2>
+								<p style="margin: 0">Here’s what we plan to do this week:
+									<ul style="margin-left: 1em">
+										<li>Pick up the custom PCB and test the circuits</li>
+										<li>Start designing the embroidery hoop mount</li>
+										<li>Refine the software (set software limits that reflect hardware limitations, implement calibration procedure, etc.)</li>
+									</ul>
+								</p>
+								<p>Stay tuned for our next weekly post, and <a href="https://twitter.com/stitchstudio1" target="_blank">follow us on Twitter</a> for the latest updates!</p>
+								<p>Ben</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer" style="padding:0">
+						<p class="copyright">&copy; Stitch Studio</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
