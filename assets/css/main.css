@@ -2950,7 +2950,7 @@ input, select, textarea {
 				display: block;
 				width: 20em;
 				max-width: 100%;
-				margin: 0 auto 2em auto;
+				margin: auto;
 			}
 
 				.statistics li:first-child {
@@ -2961,6 +2961,11 @@ input, select, textarea {
 				.statistics li:last-child {
 					border-top-right-radius: 0;
 					border-bottom-left-radius: 8px;
+				}
+
+				.statistics.blog li {
+					border-bottom-left-radius: 8px;
+					border-top-right-radius: 8px;
 				}
 
 				.statistics li .icon:before {
